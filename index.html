@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .biodata {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            color: #3498db;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hobbies {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .hobbies li {
+            display: inline-block;
+            background: #e8f4fc;
+            color: #2980b9;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+        }
+
+        .hobbies li:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .education {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            color: #555;
+            font-size: 1.05em;
+            line-height: 1.8;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .contact {
+            margin-top: 30px;
+        }
+
+        .contact a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            margin: 5px 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .email-link {
+            background: #27ae60;
+            color: white;
+        }
+
+        .email-link:hover {
+            background: #219a52;
+            transform: translateY(-2px);
+        }
+
+        .instagram-link {
+            background: #e1306c;
+            color: white;
+        }
+
+        .instagram-link:hover {
+            background: #c1275b;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .profile-image {
+                width: 140px;
+                height: 140px;
+            }
+
+            .contact a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+
+            <img src="foto1.jpeg" 
+                 alt="Foto Profile" 
+                 class="profile-image">
+            
+            <h1>Raihan Alfi</h1>
+            
+            <p class="biodata">
+                Halo! Saya merupakan lulusan SMK jurusan Rekayasa Perangkat Lunak yang memiliki
+                ketertarikan besar di bidang coding dan pengembangan perangkat lunak.
+                <br>
+                Sejak masa
+                sekolah, saya telah terbiasa mempelajari dan mempraktikkan pemrograman secara
+                mandiri untuk meningkatkan kemampuan teknis saya.
+                Saya memiliki semangat belajar yang tinggi dan terbiasa mengeksplorasi berbagai
+                bahasa pemrograman serta membangun proyek sederhana sebagai bentuk pengembangan 
+                diri.
+                <br>
+                Latar belakang pendidikan yang sejalur dengan dunia coding membuat saya 
+                memahami dasar-dasar logika pemrograman, perancangan sistem, serta pengembangan 
+                aplikasi.
+
+                Saya terus berkomitmen untuk mengasah kemampuan dan berkembang di bidang teknologi
+                 informasi, khususnya dalam pengembangan software dan sistem berbasis komputer
+            </p>
+            
+            <h3 class="section-title">Hobi Saya</h3>
+            <ul class="hobbies">
+                <li>💻 Coding</li>
+                <li>⛰️ Mendaki</li>
+                <li>🎮 Gaming</li>
+                <li>🎵 Musik</li>
+                <li>🏊 Berenang</li>
+                <li>✈️ Traveling</li>
+            </ul>
+
+            <h3 class="section-title">Pendidikan</h3>
+            <ol class="education">
+                <li>2011 - 2017 | SD  | SD Muhammadiyah 20 Medan</li>
+                <li>2017 - 2020 | SMP | SMP Muhammadiyah 08 Medan</li>
+                <li>2020 - 2023 | SMK Raksana 2 Medan | Rekayasa Perangkat Lunak</li>
+                <li>2024 - sekarang | Universitas Muhammadiyah Sumatera Utara | Program Studi Sistem Informasi</li>
+            </ol>
+            
+            <div class="contact">
+                <h3 class="section-title">Hubungi Saya</h3>
+                <a href="mailto:raihanalfi29@gmail.com" class="email-link">📧 Email</a>
+                <a href="https://instagram.com/dndamldy_" class="instagram-link">📷 Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Raihan Alfi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
